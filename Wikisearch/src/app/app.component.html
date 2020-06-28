@@ -1,0 +1,7 @@
+<div class="container">  
+    <!--Event Binding-->
+<!--Gets the new submission and updates the term-->
+    <app-search-bar (submitted)="onTerm($event)"></app-search-bar>
+<!--Property Binding-->
+    <app-page-list *ngIf="pages.length" [pages]="pages"></app-page-list>
+</div>
